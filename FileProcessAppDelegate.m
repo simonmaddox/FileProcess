@@ -8,8 +8,7 @@
 
 #import "FileProcessAppDelegate.h"
 #import "NSString+SDPathExtensions.h"
-
-#define FileExtension @"txt"
+#import "FileProcessConfig.h"
 
 @implementation FileProcessAppDelegate
 
@@ -45,7 +44,7 @@
 		return YES;
 	}
 	
-	if ([[[[url path] pathExtension] lowercaseString] isEqualToString:FileExtension]){
+	if ([[[[url path] pathExtension] lowercaseString] isEqualToString:[FileProcessConfig extension]]){
 		return YES;
 	}
 	
@@ -69,7 +68,7 @@
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	[self performSelectorOnMainThread:@selector(startSpinner) withObject:nil waitUntilDone:NO];
-	[self findFileWithExtension:FileExtension inPath:path recursive:YES];
+	[self findFileWithExtension:[FileProcessConfig extension] inPath:path recursive:YES];
 	[self performSelectorOnMainThread:@selector(stopSpinner) withObject:nil waitUntilDone:NO];
 	[pool drain];
 }
@@ -112,10 +111,10 @@
 	
 	NSTask *task;
 	task = [[NSTask alloc] init];
-	[task setLaunchPath:@"cat"];
+	[task setLaunchPath:[FileProcessConfig launchPath]];
 	
 	NSArray *arguments;
-	arguments = [NSArray arrayWithObjects:path, nil];
+	arguments = [FileProcessConfig argumentsWithPath:path];
 	[task setArguments:arguments];
 	
 	NSPipe *pipe;
@@ -147,7 +146,7 @@
 	NSString *errorString;
 	errorString = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
 	
-	NSString *logString = [NSString stringWithFormat:@"Found File: %@\n\n%@%@---------------\n\n", path, errorString, returnString];
+	NSString *logString = [FileProcessConfig logStringWithOutput:returnString error:errorString path:path];
 	
 	[returnString release];
 	[errorString release];

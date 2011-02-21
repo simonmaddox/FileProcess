@@ -13,6 +13,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		F4CFA4E313126C1D001A8990 /* NSString+SDPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA4E213126C1D001A8990 /* NSString+SDPathExtensions.m */; };
+		F4CFA6771312B360001A8990 /* FileProcessConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA6761312B360001A8990 /* FileProcessConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		8D1107320486CEB800E47090 /* FileProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CFA4E113126C1D001A8990 /* NSString+SDPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SDPathExtensions.h"; sourceTree = "<group>"; };
 		F4CFA4E213126C1D001A8990 /* NSString+SDPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SDPathExtensions.m"; sourceTree = "<group>"; };
+		F4CFA6751312B360001A8990 /* FileProcessConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileProcessConfig.h; sourceTree = "<group>"; };
+		F4CFA6761312B360001A8990 /* FileProcessConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileProcessConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 				256AC3D90F4B6AC300CF3369 /* FileProcessAppDelegate.m */,
 				F4CFA4E113126C1D001A8990 /* NSString+SDPathExtensions.h */,
 				F4CFA4E213126C1D001A8990 /* NSString+SDPathExtensions.m */,
+				F4CFA6751312B360001A8990 /* FileProcessConfig.h */,
+				F4CFA6761312B360001A8990 /* FileProcessConfig.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* FileProcessAppDelegate.m in Sources */,
 				F4CFA4E313126C1D001A8990 /* NSString+SDPathExtensions.m in Sources */,
+				F4CFA6771312B360001A8990 /* FileProcessConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
