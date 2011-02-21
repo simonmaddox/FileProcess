@@ -12,6 +12,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F4C4E6951312B93E00036E1D /* epubcheck.jar in Resources */ = {isa = PBXBuildFile; fileRef = F4C4E6901312B93E00036E1D /* epubcheck.jar */; };
+		F4C4E6961312B93E00036E1D /* lib in Resources */ = {isa = PBXBuildFile; fileRef = F4C4E6911312B93E00036E1D /* lib */; };
 		F4CFA4E313126C1D001A8990 /* NSString+SDPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA4E213126C1D001A8990 /* NSString+SDPathExtensions.m */; };
 		F4CFA6771312B360001A8990 /* FileProcessConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CFA6761312B360001A8990 /* FileProcessConfig.m */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* FileProcess-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FileProcess-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* FileProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C4E6901312B93E00036E1D /* epubcheck.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = epubcheck.jar; sourceTree = "<group>"; };
+		F4C4E6911312B93E00036E1D /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
 		F4CFA4E113126C1D001A8990 /* NSString+SDPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SDPathExtensions.h"; sourceTree = "<group>"; };
 		F4CFA4E213126C1D001A8990 /* NSString+SDPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SDPathExtensions.m"; sourceTree = "<group>"; };
 		F4CFA6751312B360001A8990 /* FileProcessConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileProcessConfig.h; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4C4E6901312B93E00036E1D /* epubcheck.jar */,
+				F4C4E6911312B93E00036E1D /* lib */,
 				8D1107310486CEB800E47090 /* FileProcess-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -176,8 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C4E6951312B93E00036E1D /* epubcheck.jar in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				F4C4E6961312B93E00036E1D /* lib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

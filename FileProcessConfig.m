@@ -13,22 +13,22 @@
 
 + (NSString *) extension
 {
-	return @"txt";
+	return @"epub";
 }
 
 + (NSString *) launchPath
 {
-	return @"/bin/cat";
+	return @"/usr/bin/java";
 }
 
 + (NSArray *) argumentsWithPath:(NSString *) path
 {
-	return [NSArray arrayWithObjects:path, nil];
+	return [NSArray arrayWithObjects:@"-jar", [[NSBundle mainBundle] pathForResource:@"epubcheck" ofType:@"jar"], path, nil];
 }
 
 + (NSString *) logStringWithOutput:(NSString *)output error:(NSString *)error path:(NSString *)path
 {
-	return [NSString stringWithFormat:@"Found File: %@\n\n%@%@---------------\n\n", path, error, output];
+	return [NSString stringWithFormat:@"Found ePub: %@\n\n%@%@---------------\n\n", path, error, output];
 }
 
 @end
