@@ -30,7 +30,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* FileProcess-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FileProcess-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* FileProcess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileProcess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* ePub Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ePub Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C4E6901312B93E00036E1D /* epubcheck.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = epubcheck.jar; sourceTree = "<group>"; };
 		F4C4E6911312B93E00036E1D /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
 		F4CFA4E113126C1D001A8990 /* NSString+SDPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SDPathExtensions.h"; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* FileProcess.app */,
+				8D1107320486CEB800E47090 /* ePub Checker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			name = FileProcess;
 			productInstallPath = "$(HOME)/Applications";
 			productName = FileProcess;
-			productReference = 8D1107320486CEB800E47090 /* FileProcess.app */;
+			productReference = 8D1107320486CEB800E47090 /* ePub Checker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +238,7 @@
 				GCC_PREFIX_HEADER = FileProcess_Prefix.pch;
 				INFOPLIST_FILE = "FileProcess-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = FileProcess;
+				PRODUCT_NAME = "ePub Checker";
 			};
 			name = Debug;
 		};
@@ -252,7 +252,7 @@
 				GCC_PREFIX_HEADER = FileProcess_Prefix.pch;
 				INFOPLIST_FILE = "FileProcess-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = FileProcess;
+				PRODUCT_NAME = "ePub Checker";
 			};
 			name = Release;
 		};
